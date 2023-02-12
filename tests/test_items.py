@@ -11,6 +11,6 @@ class TestPage:
         driver, language = browser
         url = BASE_PATH + language + PAGE_PATH
         driver.get(url)
-        btn = driver.find_elements(By.CSS_SELECTOR, '#add_to_basket_form>butto')
+        btn = driver.find_elements(By.CSS_SELECTOR, '#add_to_basket_form>button')
         assert btn, 'Not found button - "Add to basket"'
         # sleep(10)
